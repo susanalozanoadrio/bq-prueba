@@ -1,37 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>bq pueba maquetación</title>
-    <link rel="stylesheet" href="/css/index.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>bq pueba maquetación</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
     <header>
-      <img src="images/logo-bq.png" alt="logo de la marca bq con circulos de colores alrededor">
-      <ul>
-       <li>item1</li>
-       <li>item2</li>
-       <li>item3</li>
-       <li>item4</li>
-      </ul>
-    </header>
-    <div class="content">
-      <div class="categoriesContainer">
-        <h1>Categories</h1>
-        <ul>
-          <li>item1</li>
-          <li>item2</li>
-            <ul>
-              <li>item1</li>
-              <li>item2</li>
-              <li>item3</li>
-            </ul>
-          <li>item3</li>
-          <li>item4</li>
+      <a href="https://www.bq.com/es/" class="link-logo">
+          <img class="logo" src="images/logo-bq.png" alt="logo de la marca bq con circulos de colores alrededor">
+        </a>
+      <div class="header-content">
+        <button class="btnOpenMenu" type="button" name="openMenu">
+            <img class="hamburger" src="images/iconMenu.png" alt="botonMenu">
+          </button>
+        <ul class="menu-mobile slideInDown hidden">
+          <li class="none">
+            <a href="#" class="list-mobile">item1</a>
+          </li>
+          <li class="none">
+            <a href="#" class="list-mobile">item2</a>
+          </li>
+          <li class="none">
+            <a href="#" class="list-mobile">item3</a>
+          </li>
+          <li class="none">
+            <a href="#" class="list-mobile">item4</a>
+          </li>
+        </ul>
+        <ul class="menu-desktop hover-header">
+          <li class="none">
+            <a href="#" class="list-descktop">item1</a>
+          </li>
+          <li class="none">
+            <a href="#" class="list-descktop">item2</a>
+          </li>
+          <li class="none">
+            <a href="#" class="list-descktop">item3</a>
+          </li>
+          <li class="none">
+            <a href="#" class="list-descktop">item4</a>
+          </li>
         </ul>
       </div>
-      <div class="catalogueContainer">
-        <h1>Catalogue</h1>
+    </header>
+    <div class="content">
+      <div class="categories-container">
+        <div class="tittle-section">
+          <h2>Categories</h2>
+        </div>
+
+        <ul class="categories-list">
+          <li class="none pading-list">
+            <a class="item-categories" href="#">item1</a>
+          </li>
+          <li class="none pading-list">
+            <a class="item-categories" href="#">item2</a>
+          </li>
+          <ul class="subcaegories-list hidden">
+            <li class="none pading-list">
+              <a class="item-categories" href="#">item1</a>
+            </li>
+            <li class="none pading-list">
+              <a class="item-categories" href="#">item2</a>
+            </li>
+            <li class="none pading-list">
+              <a class="item-categories" href="#">item3</a>
+            </li>
+          </ul>
+          <li class="none pading-list">
+            <a class="item-categories" href="#">item3</a></li>
+          <li class="none pading-list">
+            <a class="item-categories" href="#">item4</a></li>
+        </ul>
+      </div>
+
+      <div class="catalogue-container">
+        <div class="class=" tittle-section "">
+          <h2>Catalogue</h2>
+        </div>
+
         <div class="photos">
           <img src="images/130x180.png" alt="imagen de posicion sin contenido">
           <img src="images/130x180.png" alt="imagen de posicion sin contenido">
@@ -39,8 +91,11 @@
           <img src="images/130x180.png" alt="imagen de posicion sin contenido">
         </div>
       </div>
-      <div class="featuredProductContainer">
-        <h1>Featured product</h1>
+      <div class="featured-product-container">
+        <div class="class=" tittle-section "">
+          <h2>Featured product</h2>
+        </div>
+
         <h3>Lorem ipsum dolor </h3>
         <p>Duis aute irure dolor in henderit in <strong>voluptate velit</strong> esse molestìe consecuat,vel illum dolore eu
           <br> <em>fugiat nulla</em> facilisis at vero eros et accusan et iusto odio.</p>
@@ -51,36 +106,41 @@
             <input id="userName" type="text" name="name" placeholder="Name">
             <input id="email" type="text" name="email" placeholder="Email" value "">
           </fieldset>
-           <input class="submit" type="submit" name="send" value="Send">
+          <input class="submit" type="submit" name="send" value="Send">
         </div>
       </div>
-      <footer>
-        <h1>Footer</h1>
-        <h5>Heading</h5>
-        <ul>
-          <li>item1</li>
-          <li>item2</li>
-          <li>item3</li>
-          <li>item4</li>
-        </ul>
-        <h5>Heading</h5>
-        <ol>
-          <li>item1</li>
-          <li>item2</li>
-          <li>item3</li>
-          <li>item4</li>
-        </ol>
-        <h5>Heading</h5>
-        <ul>
-          <li>item1</li>
-          <li>item2</li>
-          <li>item3</li>
-          <li>item4</li>
-        </ul>
-      </footer>
-
     </div>
 
+    <footer>
+      <div class="tittle-footer">
+        <h1>Footer</h1>
+      </div>
+      <h5>Heading</h5>
+      <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+      </ul>
+      <h5>Heading</h5>
+      <ol>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+      </ol>
+      <h5>Heading</h5>
+      <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+      </ul>
+    </footer>
 
-  </body>
+  </div>
+  </div>
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+
 </html>
