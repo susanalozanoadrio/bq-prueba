@@ -3,5 +3,70 @@ footer{
   grid-area: footer;
 }
 
+.navigation {
+  width: 300px;
+}
+
+.mainmenu,
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-grey;
+  text-decoration: none;
+  padding: 10px;
+  color: $white;
+}
+
+.mainmenu a:hover {
+  background-color: $medium-grey;
+}
+
+.mainmenu li.open-submenu:hover .submenu {
+  display: block;
+  max-height: 200px;
+}
+
+.submenu a {
+  background-color: $medium-grey;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submenu a:hover {
+  background-color: $dark-grey;
+}
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+
+@media(min-width:$desktop-breackpoint) {
+  .navigation {
+    width: 150px;
+  }
+
+  .mainmenu a {
+    justify-content: flex-start;
+  }
+
+  .submenu a {
+    justify-content: flex-start;
+  }
+}
+
+
+
 @media(min-width:$desktop-breackpoint) {
 }

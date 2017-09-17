@@ -1,7 +1,24 @@
 .catalogue-container{
   background-color:$light-grey;
   grid-area:catalogue;
+
 }
 
+.photos{
+  display:flex;
+}
+
+.photo-catalogue{
+ margin-right: 10px;
+}
+
+
 @media(min-width:$desktop-breackpoint) {
+
+.photos{
+  display: grid;
+  grid-template-rows: 180px 180px;
+  grid-template-columns: 130px 130px;
+  grid-row-gap:10px;
+}
 }

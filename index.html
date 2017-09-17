@@ -16,7 +16,7 @@
         </a>
       <div class="header-content">
         <button class="btnOpenMenu" type="button" name="openMenu">
-            <img class="hamburger" src="images/iconMenu.png" alt="botonMenu">
+            <img class="hamburger" src="images/iconmenu.png" alt="botonMenu">
           </button>
         <ul class="menu-mobile slideInDown hidden">
           <li class="none">
@@ -53,46 +53,48 @@
         <div class="tittle-section">
           <h2>Categories</h2>
         </div>
-
-        <ul class="categories-list">
-          <li class="none pading-list">
-            <a class="item-categories" href="#">item1</a>
-          </li>
-          <li class="none pading-list">
-            <a class="item-categories" href="#">item2</a>
-          </li>
-          <ul class="subcaegories-list hidden">
-            <li class="none pading-list">
+        <nav class="navigation">
+          <ul class="mainmenu">
+            <li class="none">
               <a class="item-categories" href="#">item1</a>
             </li>
-            <li class="none pading-list">
+            <li class="none open-submenu">
               <a class="item-categories" href="#">item2</a>
+
+              <ul class="submenu">
+                <li class="none">
+                  <a class="item-categories" href="#">item1</a>
+                </li>
+                <li class="none">
+                  <a class="item-categories" href="#">item2</a>
+                </li>
+                <li class="none">
+                  <a class="item-categories" href="#">item3</a>
+                </li>
             </li>
-            <li class="none pading-list">
-              <a class="item-categories" href="#">item3</a>
-            </li>
+            </ul>
+            <li class="none">
+              <a class="item-categories" href="#">item3</a></li>
+            <li class="none">
+              <a class="item-categories" href="#">item4</a></li>
           </ul>
-          <li class="none pading-list">
-            <a class="item-categories" href="#">item3</a></li>
-          <li class="none pading-list">
-            <a class="item-categories" href="#">item4</a></li>
-        </ul>
+        </nav>
       </div>
 
       <div class="catalogue-container">
-        <div class="class=" tittle-section "">
+        <div class="tittle-section">
           <h2>Catalogue</h2>
         </div>
 
         <div class="photos">
-          <img src="images/130x180.png" alt="imagen de posicion sin contenido">
-          <img src="images/130x180.png" alt="imagen de posicion sin contenido">
-          <img src="images/130x180.png" alt="imagen de posicion sin contenido">
-          <img src="images/130x180.png" alt="imagen de posicion sin contenido">
+          <img class="photo-catalogue" src="images/130x180.png" alt="imagen de posicion sin contenido">
+          <img class="photo-catalogue" src="images/130x180.png" alt="imagen de posicion sin contenido">
+          <img class="photo-catalogue" src="images/130x180.png" alt="imagen de posicion sin contenido">
+          <img class="photo-catalogue" src="images/130x180.png" alt="imagen de posicion sin contenido">
         </div>
       </div>
       <div class="featured-product-container">
-        <div class="class=" tittle-section "">
+        <div class="tittle-section">
           <h2>Featured product</h2>
         </div>
 
@@ -101,44 +103,54 @@
           <br> <em>fugiat nulla</em> facilisis at vero eros et accusan et iusto odio.</p>
         <div class="photoAndFormContainer">
           <img src="images/310x180.png" alt="imagen de posicion sin contenido">
-          <h4>Request form</h4>
-          <fieldset class="nameAndEmail">
-            <input id="userName" type="text" name="name" placeholder="Name">
-            <input id="email" type="text" name="email" placeholder="Email" value "">
-          </fieldset>
-          <input class="submit" type="submit" name="send" value="Send">
+          <div class="form-content">
+            <h4 class="tittle-section">Request form</h4>
+            <form class="name-email">
+              <input class="user-name" type="text" name="name" placeholder="Name">
+              <input class="email" type="text" name="email" placeholder="Email" value "">
+            </form>
+            <div class="send-container">
+              <input class="submit" type="submit" name="send" value="Send">
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <footer>
-      <div class="tittle-footer">
+      <div class="tittle-section">
         <h1>Footer</h1>
       </div>
-      <h5>Heading</h5>
       <ul>
-        <li>item1</li>
-        <li>item2</li>
-        <li>item3</li>
-        <li>item4</li>
-      </ul>
-      <h5>Heading</h5>
-      <ol>
-        <li>item1</li>
-        <li>item2</li>
-        <li>item3</li>
-        <li>item4</li>
-      </ol>
-      <h5>Heading</h5>
-      <ul>
-        <li>item1</li>
-        <li>item2</li>
-        <li>item3</li>
-        <li>item4</li>
+        <li>
+          <a href="#">Heading</a>
+          <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Heading</a>
+          <ol>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+          </ol>
+        </li>
+        <li>
+          <a href="#">Heading</a>
+          <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+          </ul>
+        </li>
       </ul>
     </footer>
-
-  </div>
   </div>
   <script src="js/main.js" charset="utf-8"></script>
 </body>
