@@ -1,6 +1,7 @@
 header{
   background-color:$dark-grey;
   grid-area: header;
+  display: flex;
 }
 
 .link-logo .logo  {
@@ -43,20 +44,27 @@ header{
 }
 
 .menu-mobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  position: absolute;
+  display:none;
+  position:absolute;
   right: 0;
+  top: 80px;
   opacity: 1;
   width: 200px;
-  margin-top: 0;
   background-color:$dark-grey;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.menu-mobile li a:hover{
+color:rgb(230,38,51);
+}
+
+.menu-mobile li{
+  padding-bottom: 10px;
+  justify-content: center;
 }
 
 .list-mobile{
-  display:none;
   font-family: $main-tipography;
   text-decoration: none;
   color: $white;
@@ -85,7 +93,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     padding-right: 80px;
-  
+
   }
 
   .list-descktop{

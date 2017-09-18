@@ -78,7 +78,10 @@ p {
 
 header {
   background-color: #4a4a4a;
-  grid-area: header; }
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .link-logo .logo {
   width: 150px;
@@ -128,28 +131,26 @@ header {
   border: none; }
 
 .menu-mobile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
   position: absolute;
   right: 0;
+  top: 80px;
   opacity: 1;
   width: 200px;
-  margin-top: 0;
-  background-color: #4a4a4a; }
+  background-color: #4a4a4a;
+  overflow: hidden;
+  padding-top: 10px; }
+
+.menu-mobile li a:hover {
+  color: #e62633; }
+
+.menu-mobile li {
+  padding-bottom: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .list-mobile {
-  display: none;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: white; }
@@ -279,29 +280,6 @@ footer {
   overflow: hidden;
   max-height: 0;
   -webkit-transition: all 0.5s ease-out; }
-
-@-webkit-keyframes slideInDown {
-  from {
-    -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0);
-    visibility: visible; }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); } }
-
-@keyframes slideInDown {
-  from {
-    -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0);
-    visibility: visible; }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); } }
-.slideInDown {
-  -webkit-animation-name: slideInDown;
-          animation-name: slideInDown;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s; }
 
 .catalogue-container {
   background-color: #f0f0f0;
@@ -469,6 +447,27 @@ footer {
   height: 40px;
   background-color: #4a4a4a;
   color: white; }
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+          animation-name: slideInDown; }
 
 .hidden {
   display: none; }
