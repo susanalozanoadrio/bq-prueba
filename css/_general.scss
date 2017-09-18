@@ -5,14 +5,14 @@ body{
 }
 
 .container {
-  min-height: 100vh;
+  min-height:100vh;
   display: grid;
-  grid-template-rows:  100px 1fr 1fr 1fr 1fr;
+  grid-template-rows:  100px 1fr 1fr 1fr 100;
   grid-template-areas: "header" "categories" "catalogue" "featured-product" "footer";
   }
 
 .content{
-  width: 100vw;
+  width: 100%;
   background-color:$light-grey;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@ body{
 @media(min-width:$desktop-breackpoint) {
   .container {
   display: grid;
-  grid-template-rows: 100px 1fr 1fr;
+  grid-template-rows: 100px 1fr 100;
   grid-template-columns: 15% 20% 65%;
   grid-template-areas: "header header header" "categories catalogue featured-product" "footer footer footer";
 }
